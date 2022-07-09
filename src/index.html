@@ -15,253 +15,276 @@
 <body>
     <style>
         * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    min-height: 100%;
-    background: #eee;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    color: #222;
-    font-size: 14px;
-    line-height: 26px;
-    padding-bottom: 50px;
-  }
-  
-  .container {
-    max-width: 700px;
-    background: #fff;
-    margin: 0px auto 0px;
-    box-shadow: 1px 1px 2px #DAD7D7;
-    border-radius: 3px;
-    padding: 40px;
-    margin-top: 50px;
-  }
-  
-  .header {
-    margin-bottom: 30px;
-  }
-  .header .full-name {
-    font-size: 40px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-  }
-  .header .first-name {
-    font-weight: 700;
-  }
-  .header .last-name {
-    font-weight: 300;
-  }
-  .header .contact-info {
-    margin-bottom: 20px;
-  }
-  .header .email,
-  .header .phone {
-    color: #999;
-    font-weight: 300;
-  }
-  .header .separator {
-    height: 10px;
-    display: inline-block;
-    border-left: 2px solid #999;
-    margin: 0px 10px;
-  }
-  .header .position {
-    font-weight: bold;
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: underline;
-  }
-  
-  .details {
-    line-height: 20px;
-  }
-  .details .section {
-    margin-bottom: 40px;
-  }
-  .details .section:last-of-type {
-    margin-bottom: 0px;
-  }
-  .details .section__title {
-    letter-spacing: 2px;
-    color: #54AFE4;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  .details .section__list-item {
-    margin-bottom: 40px;
-  }
-  .details .section__list-item:last-of-type {
-    margin-bottom: 0;
-  }
-  .details .left,
-  .details .right {
-    vertical-align: top;
-    display: inline-block;
-  }
-  .details .left {
-    width: 60%;
-  }
-  .details .right {
-    text-align: right;
-    width: 39%;
-  }
-  .details .name {
-    font-weight: bold;
-  }
-  .details a {
-    text-decoration: none;
-    color: #000;
-    font-style: italic;
-  }
-  .details a:hover {
-    text-decoration: underline;
-    color: #000;
-  }
-  .details .skills__item {
-    margin-bottom: 10px;
-  }
-  .details .skills__item .right input {
-    display: none;
-  }
-  .details .skills__item .right label {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: #C3DEF3;
-    border-radius: 20px;
-    margin-right: 3px;
-  }
-  .details .skills__item .right input:checked + label {
-    background: #79A9CE;
-  }
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  /* .exp{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: red;
-  } */
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .header .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .header .first-name {
+            font-weight: 700;
+        }
+
+        .header .last-name {
+            font-weight: 300;
+        }
+
+        .header .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .header .email,
+        .header .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .header .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+
+        .header .position {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .right .name,
+        .left .name {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .details .section {
+            margin-bottom: 40px;
+        }
+
+        .details .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .details .section__title {
+            letter-spacing: 2px;
+            color: #54AFE4;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .details .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .details .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .details .left,
+        .details .right {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .details .left {
+            width: 60%;
+        }
+
+        .details .right {
+            text-align: left;
+            width: 39%;
+        }
+
+        .details .name {
+            font-weight: bold;
+        }
+
+        .details a {
+            text-decoration: none;
+            color: #000;
+            font-style: italic;
+        }
+
+        .details a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .details .skills__item {
+            margin-bottom: 10px;
+        }
+
+        .details .skills__item .right input {
+            display: none;
+        }
+
+        .details .skills__item .right label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #C3DEF3;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        .details .skills__item .right input:checked+label {
+            background: #79A9CE;
+        }
+
+        .exp {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            line-height: 1.5;
+        }
+
+        #skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-top: 20px;
+
+        }
     </style>
-        <div class="container">
-            <div class="header">
-                <div class="full-name">
-                    <span class="first-name">Scott</span>
-                    <span class="last-name">Lexium</span>
-                </div>
-                <div class="contact-info">
-                    <span class="email">Email: </span>
-                    <span class="email-val">Scott.Lexium@studentambassadors.com</span>
-                    <span class="separator"></span>
-                    <span class="phone">Phone: </span>
-                    <span class="phone-val">+234-811-863-8617</span>
-                </div>
-
-                <div class="about">
-                    <span class="position">Front-End Developer </span>
-                    <span class="desc">
-                        I am a full-stack developer with more than 4 years of experience using MERN stack tools and other problem solving tech. I'm
-                        motivated, result-focused and seeking a successful team-oriented company with opportunity to
-                        grow.
-                    </span>
-                </div>
+    <div class="container">
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">Scott</span>
+                <span class="last-name">Lexium</span>
             </div>
-            <div class="details">
-                <div id="section" class="section exp">
-                    <div class="section__title">Experience</div>
-                </div>
-                <div class="section">
-                    <div class="section__title">Projects</div>
-                    <div class="section__list">
-                        <div class="section__list-item">
-                            <div class="name">DSP</div>
-                            <div class="text">I am a front-end developer with more than 3 years of experience writing
-                                html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented
-                                company with opportunity to grow.</div>
-                        </div>
+            <div class="contact-info">
+                <span class="email">Email: </span>
+                <span class="email-val">Scott.Lexium@studentambassadors.com</span>
+                <span class="separator"></span>
+                <span class="phone">Phone: </span>
+                <span class="phone-val">+234-811-863-8617</span>
+            </div>
 
-                        <div class="section__list-item">
-                            <div class="name">DSP</div>
-                            <div class="text">I am a front-end developer with more than 3 years of experience writing
-                                html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented
-                                company with opportunity to grow. <a href="/login">link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="section__title">Skills</div>
-                    <div class="skills">
-                        <div class="skills__item">
-                            <div class="left">
-                                <div class="name">
-                                    Javascript
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="skills__item">
-                        <div class="left">
-                            <div class="name">
-                                CSS</div>
-                        </div>
+            <div class="about">
+                <span class="position">Front-End Developer </span>
+                <span class="desc">
+                    I am a full-stack developer with more than 4 years of experience using MERN stack tools and other
+                    problem solving tech. I'm
+                    motivated, result-focused and seeking a successful team-oriented company with opportunity to
+                    grow.
+                </span>
+            </div>
+        </div>
+        <div class="details">
+            <div id="section" class="section exp">
+                <div class="section__title">Experience</div>
+            </div>
+            <!-- <div class="section">
+                <div class="section__title">Projects</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name">DSP</div>
+                        <div class="text">I am a front-end developer with more than 3 years of experience writing
+                            html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented
+                            company with opportunity to grow.</div>
                     </div>
 
-                </div>
-                <div class="section">
-                    <div class="section__title">
-                        Interests
-                    </div>
-                    <div class="section__list">
-                        <div class="section__list-item">
-                            Football, programming.
+                    <div class="section__list-item">
+                        <div class="name">DSP</div>
+                        <div class="text">I am a front-end developer with more than 3 years of experience writing
+                            html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented
+                            company with opportunity to grow. <a href="/login">link</a>
                         </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="section">
+                <div class="section__title">Skills</div>
+                <div class="skills" id="skills">
+
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    Interests
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        Problem Solving, Programming, Music.
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        <script>
-            function load() {
-    console.log("loaded")
-    // dynamic content
-    const experience = [
-        {
-            company: "Xender",
-            location: "China",
-            start: "Nov-2020",
-            end: "Present",
-            title: "Software Engineer",
-            description: "Xender is a cloud-based software development company.",
-        },
-        {
-            company: "Xender",
-            location: "China",
-            start: "Nov-2019",
-            end: "Nov-2020",
-            title: "Software Engineer",
-            description: "Xender is a cloud-based software development company.",
-        },
-        {
-            company: "facebook",
-            location: "USA",
-            start: "Nov-2018",
-            end: "Nov-2019",
-            title: "Software Engineer",
-            description: "Xender is a cloud-based software development company.",
+    </div>
+    </div>
+    <script>
+        function load() {
+            // dynamic content
+            const experience = [
+                {
+                    company: "Xender",
+                    location: "China",
+                    start: "Nov-2020",
+                    end: "Present",
+                    title: "Software Analyst",
+                    description: "Xender is one of the world's leading app, which lets you enjoy transferring files like photos, music, contacts, videos and apps in the best possible manner.",
+                },
+                {
+                    company: "Oyaanow",
+                    location: "Nigeria",
+                    start: "Jan-2022",
+                    end: "Apr-2022",
+                    title: "Backend Engineer",
+                    description: "Oyaanow is an online platform that helps you to find the best bus companies and make reservations from home.",
+                },
+                {
+                    company: "Kuprative",
+                    location: "USA",
+                    start: "Jan-2022",
+                    end: "Present",
+                    title: "Full-Stack Engineer",
+                    description: "Kuprative is a platform that built to grant farmers loans to physical and other financial assets.",
 
-        },
+                },
 
-    ];
-    const name = document.getElementById("section");
-    for (let i = 0; i < experience.length; i++) {
-        const element = experience[i];
-        name.innerHTML += `
+            ];
+            const name = document.getElementById("section");
+            for (let i = 0; i < experience.length; i++) {
+                const element = experience[i];
+                name.innerHTML += `
         <div class="section__list">
             <div class="section__list-item">
                 <div class="left">
@@ -275,13 +298,79 @@
                 </div>
             </div>
         </div>
-
         `
+            }
+            // dynamic content
+            const skills = [
+                {
+                    name: "Javascript",
+                },
+                {
+                    name: "CSS",
+                },
+                {
+                    name: "HTML",
+                },
+                {
+                    name: "MySQL",
+                },
+                {
+                    name: "NodeJS",
+                },
+                {
+                    name: "ReactJS",
+                },
+                {
+                    name: "Wordpress",
+                },
+                {
+                    name: "Python",
+                },
+                {
+                    name: "Flutter",
+                },
+                {
+                    name: "Firebase",
+                },
+                {
+                    name: "GCP",
+                },
+                {
+                    name: "AWS",
+                },
+                {
+                    name: "Git",
+                },
+                {
+                    name: "GitHub",
+                },
+                {
+                    name: "GitLab",
+                },
+                {
+                    name: "React Native",
+                },
+                {
+                    name: "mongoDB",
+                },
 
-    }
-    // dynamic content
-}
-window.addEventListener("load", load);
+            ];
+            const skills_list = document.getElementById("skills");
+            for (let i = 0; i < skills.length; i++) {
+                const element = skills[i];
+                console.log(element.name)
+                skills_list.innerHTML += `
+                <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                ${element.name}
+                            </div>
+                        </div>
+                </div>
+        `
+            }
+        }
+        window.addEventListener("load", load);
 
     </script>
 
