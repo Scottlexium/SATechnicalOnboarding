@@ -91,7 +91,7 @@
     width: 60%;
   }
   .details .right {
-    text-align: right;
+    text-align: left;
     width: 39%;
   }
   .details .name {
@@ -124,9 +124,9 @@
     background: #79A9CE;
   }
 
-  /* .exp{
+  .exp{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: red;
-  } */
+    line-height: 1.5;
+  }

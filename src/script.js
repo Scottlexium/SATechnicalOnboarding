@@ -7,8 +7,8 @@ function load() {
             location: "China",
             start: "Nov-2020",
             end: "Present",
-            title: "Software Engineer",
-            description: "Xender is a cloud-based software development company.",
+            title: "Software Analyst",
+            description: "Making sure that the product is as good as possible and that the user is as happy as possible.",
         },
         {
             company: "Xender",
